@@ -16,8 +16,11 @@ Log this to Capacities: standup went well, need to follow up on deployment
 ```
 Add tasks to my daily note: send proposal, review budget, book meeting room
 ```
+```
+Summarize what we just did and add it to my daily note
+```
 
-The skill triggers automatically when you mention adding to your daily note or Capacities, or you can invoke it directly with `/capacities-daily-note`.
+The skill triggers automatically when you mention adding to your daily note or Capacities, or you can invoke it directly with `/capacities-daily-note`. Claude can also use it on your behalf to log progress, summaries, or completed work during a session.
 
 ## Setup
 
