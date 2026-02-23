@@ -6,7 +6,7 @@ A Claude Code skill that appends notes, tasks, and mixed content to today's dail
 
 ### 1. Get a Capacities API token
 
-Open Capacities > Settings > API and generate a token. You'll also need your **Space ID** (visible in the same settings page or in the URL when viewing a space).
+Open Capacities > Settings > API and generate a token. You'll also need your **Space ID** (visible Space settings, uper left corner of the app).
 
 ### 2. Install the skill
 

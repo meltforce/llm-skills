@@ -16,6 +16,9 @@ set -euo pipefail
 OP_TOKEN_REF="op://Vault/Capacities API/token"
 OP_SPACE_REF="op://Vault/Capacities API/space_id"
 
+# --- Tag appended to every note (set empty to disable) ---
+TAG="claude"
+
 # --- Input validation ---
 if [[ -z "${1:-}" ]]; then
   echo "Error: No markdown text provided." >&2
@@ -24,6 +27,10 @@ if [[ -z "${1:-}" ]]; then
 fi
 
 MD_TEXT="$1"
+
+if [[ -n "$TAG" ]]; then
+  MD_TEXT="$MD_TEXT #$TAG"
+fi
 
 # --- Credential resolution ---
 API_TOKEN=""
