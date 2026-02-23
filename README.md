@@ -13,8 +13,7 @@ Skills are custom slash-command prompts that extend Claude Code with domain-spec
 
 | Skill | Description |
 |-------|-------------|
-| `ansible-homelab` | Scaffolds Ansible playbook projects for homelab infrastructure |
-| `komodo-deploy` | Deploy, restart, and manage Docker stacks via Komodo |
+| [`capacities-daily-note`](capacities-daily-note/) | Append notes, tasks, and logs to today's Capacities daily note |
 
 ## License
 
