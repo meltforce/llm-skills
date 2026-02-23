@@ -2,6 +2,23 @@
 
 A Claude Code skill that appends notes, tasks, and mixed content to today's daily note in [Capacities](https://capacities.io) via their API.
 
+### Examples
+
+```
+/capacities-daily-note buy groceries, call dentist, review PR #42
+```
+```
+Add "met with the design team, discussed new dashboard layout" to my daily note
+```
+```
+Log this to Capacities: standup went well, need to follow up on deployment
+```
+```
+Add tasks to my daily note: send proposal, review budget, book meeting room
+```
+
+The skill triggers automatically when you mention adding to your daily note or Capacities, or you can invoke it directly with `/capacities-daily-note`.
+
 ## Setup
 
 ### 1. Get a Capacities API token
@@ -48,12 +65,6 @@ export CAPACITIES_SPACE_ID="your-space-id"
 This works but means secrets live in your shell environment. Prefer 1Password if possible.
 
 ## Usage
-
-```
-/capacities-daily-note buy groceries, call dentist, review PR #42
-/capacities-daily-note Meeting with Alex about Q3 budget. Action items: follow up on numbers, send proposal
-/capacities-daily-note Just a quick note: the deploy went smoothly today
-```
 
 The skill auto-detects whether input is tasks, prose, or a mix, and formats accordingly (checkboxes, headings, paragraphs).
 
