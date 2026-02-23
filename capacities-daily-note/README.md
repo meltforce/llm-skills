@@ -57,6 +57,15 @@ This works but means secrets live in your shell environment. Prefer 1Password if
 
 The skill auto-detects whether input is tasks, prose, or a mix, and formats accordingly (checkboxes, headings, paragraphs).
 
+### Tagging
+
+Every note is automatically appended with `#claude` so you can tell which daily note entries were created by the skill. To change the tag, edit the `TAG` variable at the top of `scripts/save_to_daily_note.sh`:
+
+```bash
+TAG="my-agent"   # appends #my-agent
+TAG=""            # disables tagging
+```
+
 ## Dependencies
 
 - `curl` and `jq` (standard on most systems)
